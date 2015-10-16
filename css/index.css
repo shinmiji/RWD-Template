@@ -1,0 +1,165 @@
+@charset "utf-8";
+
+html, head, body, div, header, nav, footer. p, ul, li {
+	margin: 0;
+	padding: 0;
+	font-size: 16px;
+	font-family: "Verdana";
+	color: #3B3B3B;
+	text-align: center;
+}
+h1, h2, h3, h4, h5 {
+	margin: 0;
+	padding: 0;
+	text-align: center;
+}
+
+
+/*smart phone*/
+.fixed:after {
+	content: '';
+	display: block;
+	clear: both;
+}
+#wrapper {
+	width: 100%;
+	margin: 0 auto;
+	background-color: #EDFFFC;
+}
+header {
+	width: 100%;
+	height: 150px;
+	background-color: #FF0000;
+}
+nav {
+	width: 100%;
+	height: 50px;
+	background-color: #FFBFBF;
+}
+#shop {
+	width: 100%;
+}
+#shop > img {
+	width:6000px;
+	max-width: 100%;
+
+}
+#intro {
+	background-color: #E7E7E7;
+	width: 98%;
+	padding: 3% 1%;
+}
+#customer {
+	background-color: #E5D5F0;
+	width: 98%;
+	padding: 3% 1%;
+}
+#f-product {
+	background-color: #FFB1E3;
+	height: inherit;
+	padding: 3% 0;
+}
+#s-product {
+	background-color: #F9FFBF;
+	height: inherit;
+	padding: 3% 0;
+}
+#t-product {
+	background-color: #FFD6BD;
+	height: inherit;
+	padding: 3% 0;
+}
+footer {
+	background-color: #BDC8FF;
+	height: 100px;
+}
+
+/*tablaet*/
+@media all and (min-width: 768px) and (max-width: 1024px) {
+	#wrapper {
+		width: 100%;
+	}
+	header {
+		background-color: #00E8FF;
+	}
+	nav {
+		background-color: #BFF9FF;
+	}
+	#customer {
+		float: left;
+		background-color: #E5D5F0;
+		width: 48%;
+		padding: 3% 1%;
+	}
+	#f-product {
+		float: left;
+		background-color: #FFB1E3;
+		width: 50%;
+	}
+	#s-product {
+		clear:both;
+		float: left;
+		background-color: #F9FFBF;
+		width: 50%;
+	}
+	#t-product {
+		float: left;
+		background-color: #FFD6BD;
+		width: 50%;
+	}
+	footer {
+		clear: both;
+	}
+}
+
+/*desktop*/
+@media all and (min-width: 1025px) {
+	#wrapper {
+		width: 80%;
+	}
+	header {
+		background-color: #00FF62;
+	}
+	nav {
+		background-color: #BFFFD8;
+	}
+	#shop {
+		width: 50%;
+		float: left;
+	}
+	#shop > img{
+		width:6000px;
+		max-width: 100%;
+	}
+	#intro {
+		width: 48%;
+		float: right;
+	}
+	#customer {
+		clear: both;
+	}
+	#customer {
+		float: left;
+		background-color: #E5D5F0;
+		width: 23%;
+		padding: 3% 1%;
+	}
+	#f-product {
+		float: left;
+		background-color: #FFB1E3;
+		width: 25%;
+	}
+	#s-product {
+		float: left;
+		background-color: #F9FFBF;
+		width: 25%;
+	}
+	#t-product {
+		float: left;
+		background-color: #FFD6BD;
+		width: 25%;
+	}
+	footer {
+		clear: both;
+	}
+}
